@@ -95,10 +95,10 @@ canvas#gameCanvas {
     background-color: #ff8000;
     transform: scale(1.1);
 }
+
 .mobile-controls {
     display: none; /* esconde por padrão */
-  }
-  
+  }  
   @media (max-width: 768px) {
     .mobile-controls {
       position: fixed;
@@ -109,7 +109,6 @@ canvas#gameCanvas {
       gap: 40px;
       z-index: 10000;
     }
-  
     .mobile-controls button {
       font-size: 40px;
       padding: 15px 30px;
@@ -120,7 +119,6 @@ canvas#gameCanvas {
       box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
       transition: transform 0.2s;
     }
-  
     .mobile-controls button:active {
       transform: scale(0.9);
     }
