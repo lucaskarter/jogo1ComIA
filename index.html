@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mario vs Bullets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splashScreen" class="splash">
+        <img src="telaInicial.png" id="splashBackground">
+        <div class="splashContent">
+            <h1 class="title">Mario vs. Bullets</h1>
+            <button id="startButton">Start Game</button>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div id="gameOverScreen" class="overlay">
+        <div class="gameOverContent">
+            <p id="gameOverText">GAME OVER</p>
+            <p id="highScoreText">High Score: 0</p>
+            <p id="newRecordText" style="display: none; color: gold; font-weight: bold;">NEW RECORD!</p>
+            <button id="resetButton">RESET</button>
+        </div>
+    </div>
+    <div class="mobile-controls">
+        <button id="leftBtn">◀</button>
+        <button id="rightBtn">▶</button>
+      </div>      
+    <script src="script.js"></script>
+</body>
+</html>
