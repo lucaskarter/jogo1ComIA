@@ -49,7 +49,6 @@ canvas#gameCanvas {
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
-/* Splash screen */
 .splash {
     position: fixed;
     top: 0;
@@ -96,31 +95,31 @@ canvas#gameCanvas {
     transform: scale(1.1);
 }
 
+/* Botões móveis */
 .mobile-controls {
-    display: none; /* esconde por padrão */
-  }  
-  @media (max-width: 768px) {
+    display: none;
+}
+@media (max-width: 768px) {
     .mobile-controls {
-      position: fixed;
-      bottom: 20px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      z-index: 10000;
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        z-index: 10000;
     }
     .mobile-controls button {
-      font-size: 40px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      background-color: #333;
-      color: white;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-      transition: transform 0.2s;
+        font-size: 40px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: #333;
+        color: white;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        transition: transform 0.2s;
     }
     .mobile-controls button:active {
-      transform: scale(0.9);
+        transform: scale(0.9);
     }
-  }
-  
+}
